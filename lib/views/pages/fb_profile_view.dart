@@ -1,3 +1,4 @@
+import 'package:fb_clone_app/views/widgets/fb_friends_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,20 +28,6 @@ class _FbProfileViewState extends State<FbProfileView> {
   List<ImageTileModel> list_imagetilemodel = [];
   @override
   void initState() {
-    // TODO: implement initState
-
-     
-    //  list_imagetilemodel = [
-    //    new ImageTileModel(imagebyte: null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //     new ImageTileModel(null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //     new ImageTileModel(null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //    new ImageTileModel(null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //     new ImageTileModel(null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //     new ImageTileModel(null,"Feature coming soon","google lens clone ui",Size(200,200)),
-    //  ];
-
-
-
 
     super.initState();
   }
@@ -92,8 +79,11 @@ class _FbProfileViewState extends State<FbProfileView> {
                   )
                   ,Padding(
                     padding: const EdgeInsets.fromLTRB(10,0,10,0),
-                    child: OwnFriendWidgets(),
-                  ),
+                    child:  Container(
+                     
+                      child: FbFriendsWidget())
+                    
+                    ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(10,10,10,10),
                     child: FbRectangleButton(btnname: "See all Details",btnclr: Colors.grey[300],textclr: Colors.black,),
@@ -145,10 +135,13 @@ class _FbProfileViewState extends State<FbProfileView> {
           ),      
           ),
 
-          Positioned(
-            bottom:10,
-            right: 110,
-            child:ProfilePicWithUploadWidget() ,
+          Center(
+            // bottom:10,
+            // right: 110,
+            child:Padding(
+              padding: const EdgeInsets.fromLTRB(0,80,0,0),
+              child: ProfilePicWithUploadWidget(),
+            ) ,
           ),
       ],
     );
@@ -278,10 +271,10 @@ class _FbProfileViewState extends State<FbProfileView> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
 
-        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.add,size: 20,),title: "Add to story",)),
-        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.remove_red_eye,size: 20,),title: "View As",)),
-        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.person_add,size: 20,),title: "Edit Profile",)),
-        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.more_horiz,size: 20,),title: "More",))
+        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.add,size: 20,color: Colors.black,),title: "Add to story",)),
+        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.remove_red_eye,size: 20,color: Colors.black,),title: "View As",)),
+        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.person_add,size: 20,color: Colors.black,),title: "Edit Profile",)),
+        Expanded(child: FbCircleTitleButton(icon: Icon(Icons.more_horiz,size: 20,color: Colors.black,),title: "More",))
 
       ],
     );
@@ -565,36 +558,35 @@ class _FbProfileViewState extends State<FbProfileView> {
         
         children: <Widget>[
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0,0,0,0),
-            child:
+          Flexible(
+            flex: 3,
+                      child: Padding(
+              padding: const EdgeInsets.fromLTRB(0,0,0,0),
+              child:
+              ListTile(
+                contentPadding:  EdgeInsets.symmetric(horizontal: 8.0),
+                title: Container(
+                    width: MediaQuery.of(context).size.width,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
 
-           
-            
-            
-            ListTile(
-              contentPadding:  EdgeInsets.symmetric(horizontal: 8.0),
-              title: Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
+                        Expanded(child: Text( "Friends",style: TextStyle(fontWeight: FontWeight.w700 ,fontSize: 22),textAlign: TextAlign.start,)),
+                        Expanded(child: Text("Find Friends", style: TextStyle(fontWeight: FontWeight.w400 ,fontSize: 18,color: Colors.blue[300]),textAlign: TextAlign.end,)),
+                      ],
+                    ),
 
-                      Expanded(child: Text( "Friends",style: TextStyle(fontWeight: FontWeight.w700 ,fontSize: 22),textAlign: TextAlign.start,)),
-                      Expanded(child: Text("Find Friends", style: TextStyle(fontWeight: FontWeight.w400 ,fontSize: 18,color: Colors.blue[300]),textAlign: TextAlign.end,)),
-                    ],
-                  ),
+                ),
+                subtitle: Text("937 friends",style:TextStyle(fontWeight: FontWeight.w300 ,fontSize: 15),),
+               // trailing: Text("Find Friends",textAlign:TextAlign.center,),
 
+                
               ),
-              subtitle: Text("937 friends",style:TextStyle(fontWeight: FontWeight.w300 ,fontSize: 15),),
-             // trailing: Text("Find Friends",textAlign:TextAlign.center,),
-
-              
             ),
           ),
           
-           FriendsGridWidgetv3(),
+          Flexible(flex:7,child: FriendsGridWidgetv3()),
 
            
         ], 
@@ -606,12 +598,16 @@ class _FbProfileViewState extends State<FbProfileView> {
 
   Widget FriendsGridWidgetv3(){
 
+     final double itemHeight = (MediaQuery.of(context).size.height - kToolbarHeight - 24) / 2;
+     final double itemWidth = MediaQuery.of(context).size.height / 2;
+
     return Container(
       //height: 500,
       child: GridView.count(
           physics: NeverScrollableScrollPhysics(),
           crossAxisCount: 3,
           shrinkWrap: true,
+         // childAspectRatio: (itemWidth / itemHeight),
           children: <Widget>[
               FbGridViewWidget( shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
               FbGridViewWidget(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),

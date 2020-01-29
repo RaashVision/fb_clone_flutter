@@ -11,11 +11,12 @@ class FbColImgTitleWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(0,0,0,0),
       child: Container(
-                    height: 150,
-                    width: 120,
+                    height: 120,
+                    width: MediaQuery.of(context).size.width/2,
                     child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          mainAxisSize: MainAxisSize.max,
+
                           children: <Widget>[
                             Expanded(flex :8,child:  FbRectangleImageButton(imgpath: "profile.jpeg",shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(
                              Radius.circular(8.0)

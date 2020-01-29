@@ -55,7 +55,7 @@ class HomeDrawerViewModel extends BaseViewModel{
       directmessage = wholedata.where((d)=> d.headername =="DM4").toList();
 
 
-      setState(ViewState.Idle);
+      setState(viewState: ViewState.Idle);
       }
 
 
@@ -103,7 +103,7 @@ class HomeDrawerViewModel extends BaseViewModel{
       //directmessage
       directmessage = wholedata.where((d)=> d.headername =="DM4").toList();
 
-      setState(ViewState.Idle);
+      setState(viewState :ViewState.Idle);
       }
 
 }

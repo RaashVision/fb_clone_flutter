@@ -1,4 +1,5 @@
 
+import 'package:fb_clone_app/viewmodels/fb_friends_viewmodel.dart';
 import 'package:get_it/get_it.dart';
 import 'package:fb_clone_app/interfaces/i_mockdata.dart';
 import 'package:fb_clone_app/repository/mock_data/mockservice.dart';
@@ -20,4 +21,5 @@ void setupLocator() {
  locator.registerSingleton(new DateTimeUtils());
  locator.registerFactory(()=>SlackProfileViewModel());
  locator.registerFactory(()=>FbProfileViewModel());
+ locator.registerFactory(()=>FbFriendsViewModel());
 }

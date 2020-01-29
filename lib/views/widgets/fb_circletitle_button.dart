@@ -8,31 +8,47 @@ class FbCircleTitleButton extends StatelessWidget {
   final double radius;
   final double imgsize;
   final String title;
+  final circlebuttoncolor;
 
-  FbCircleTitleButton({this.icon,this.clickCallback,this.radius = 90,this.imgsize =200.0,this.title});
+  FbCircleTitleButton({this.icon,this.clickCallback,this.radius = 60,this.imgsize =200.0,this.title,this.circlebuttoncolor});
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: Duration(microseconds: 2000),
-     // height: 50,
-      //width: 70,
+    return Container(
+     // duration: Duration(microseconds: 2000),
+      height: 95,
       child: Column(
+        mainAxisSize: MainAxisSize.max,
+        //crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
 
-          ClipOval(
-            child: Material(
-              color: Colors.grey.withOpacity(0.4), // button color
-              child: InkWell(
-                splashColor: Colors.red, // inkwell color
-                child: SizedBox(width: 49, height: 49, child: icon),
-                onTap: () {},
-              ),
+           Flexible(
+             flex: 5,
+                child: FloatingActionButton(
+                  backgroundColor: Colors.grey.withOpacity(0.4),
+                  onPressed: () {},
+                  elevation: 0.0,
+                  child: icon, 
+                )
+                
+              //   ClipOval(
+              //   child: Material(
+              //     color: Colors.grey.withOpacity(0.4), // button color
+              //     child: InkWell(
+              //       splashColor: Colors.grey, // inkwell color
+              //       child: SizedBox(width: radius, height: radius, child: icon),
+              //       onTap: () {},
+              //     ),
+              //   ),
+              // ),
+           ),
+          
+          Flexible(
+            flex: 5,
+                      child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(child: Text(title ,textAlign: TextAlign.center,),),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(child: Text(title),),
           )
         ],
       ),

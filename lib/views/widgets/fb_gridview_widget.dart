@@ -15,8 +15,8 @@ class FbGridViewWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(2.0),
       child: Container(
-        height: widthds+50,
-        width: widthds,
+        // height: widthds+50,
+        // width: widthds,
         child: Column(
           children: <Widget>[
 

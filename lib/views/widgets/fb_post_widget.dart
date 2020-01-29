@@ -190,9 +190,11 @@ Widget BottomView(double width ,double height){
                        mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(Icons.photo_album,color: Colors.green,),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text("Photos"),
+                      Expanded(
+                          child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("Photos"),
+                        ),
                       )
                     ],
                   ),
@@ -225,9 +227,11 @@ Widget BottomView(double width ,double height){
                          mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(Icons.flag,color: Colors.blue,),
-                        Padding(
-                          padding: const EdgeInsets.all(0.0),
-                          child: Text("Life Events"),
+                        Expanded(
+                                                  child: Padding(
+                            padding: const EdgeInsets.all(0.0),
+                            child: Text("Life Events"),
+                          ),
                         )
                       ],
                     ),
