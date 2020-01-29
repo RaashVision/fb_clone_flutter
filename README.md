@@ -1,10 +1,11 @@
-# slack_clone
+# Facebook_clone
 
-This is the Slack  clone app built in Flutter. Only about 20% clone. Just UI clone, not functionality.
+This is the Facebook  clone app built in Flutter. Only about 20% clone. Just UI clone with Provider as State Management.
+- Profile Page only
 
 ## Screenshots
 
-![rsz_1screenshot_20191218-165835](https://user-images.githubusercontent.com/14199227/72993894-1bdcdb80-3e31-11ea-9e95-aa4a510f8724.jpg)  --![screenshot_20200123-222551](https://user-images.githubusercontent.com/14199227/72993931-2e571500-3e31-11ea-8019-4ce8d5057368.jpg) --![screenshot_20200123-222557(2)](https://user-images.githubusercontent.com/14199227/72994056-6bbba280-3e31-11ea-82c6-999a528c252b.jpg)
+![Screenshot_20200129-003317](https://user-images.githubusercontent.com/14199227/73321488-8cdf2180-427d-11ea-8b6a-8448a17c48ec.jpg)  --![screenshot_20200123-222551](https://user-images.githubusercontent.com/14199227/72993931-2e571500-3e31-11ea-8019-4ce8d5057368.jpg) --![screenshot_20200123-222557(2)](https://user-images.githubusercontent.com/14199227/72994056-6bbba280-3e31-11ea-82c6-999a528c252b.jpg)
 
 ## GIF
 
