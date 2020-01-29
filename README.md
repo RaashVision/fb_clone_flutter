@@ -1,11 +1,12 @@
 # Facebook_clone
 
-This is the Facebook  clone app built in Flutter. Only about 20% clone. Just UI clone with Provider as State Management.
+This is the Facebook  clone app built in Flutter. Only about 5% clone. Just UI clone with Provider as State Management.
 - Profile Page only
 
 ## Screenshots
 
-![Screenshot_20200129-003317](https://user-images.githubusercontent.com/14199227/73321488-8cdf2180-427d-11ea-8b6a-8448a17c48ec.jpg)  --![screenshot_20200123-222551](https://user-images.githubusercontent.com/14199227/72993931-2e571500-3e31-11ea-8019-4ce8d5057368.jpg) --![screenshot_20200123-222557(2)](https://user-images.githubusercontent.com/14199227/72994056-6bbba280-3e31-11ea-82c6-999a528c252b.jpg)
+![screenshot_20200129-003317(1)](https://user-images.githubusercontent.com/14199227/73321644-18f14900-427e-11ea-9390-62f3637e54c5.jpg)--
+![screenshot_20200129-003349(1)](https://user-images.githubusercontent.com/14199227/73321658-29a1bf00-427e-11ea-9a16-f8a592378a36.jpg) --![screenshot_20200129-003354(1)](https://user-images.githubusercontent.com/14199227/73321671-37efdb00-427e-11ea-87d7-13cf4d4d7751.jpg)
 
 ## GIF
 
