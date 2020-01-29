@@ -1,0 +1,4 @@
+#Wed Jan 29 00:22:32 SGT 2020
+base.0=C\:\\Users\\David\\Downloads\\slack_clone_flutter-master\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
