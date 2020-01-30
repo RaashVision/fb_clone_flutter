@@ -47,6 +47,7 @@ class MyApp extends StatelessWidget {
 
    return LifeCycleManager(
       child: MaterialApp(
+        
         navigatorKey: CustomCatcher.navigatorKey,
         title: 'Slack Clone',
         theme: ThemeData(

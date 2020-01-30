@@ -33,7 +33,8 @@ dependencies:
   intl: ^0.16.0
   transparent_image: ^1.0.0
   font_awesome_flutter: ^8.5.0
-  flutter_staggered_grid_view: ^0.3.0
+ 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,6 +61,20 @@ flutter:
    - haha.png
    - love.png
    - sad.png
+   - likegrey.png
+   - clickedlikebtn.png
+   - images/haha.gif
+   - images/like.gif
+   - images/love.gif
+   - images/sad.gif
+   - images/wow.gif
+   - images/angry.gif
+   - images/haha.png
+   - images/like.png
+   - images/love.png
+   - images/sad.png
+   - images/wow.png
+   - images/angry.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

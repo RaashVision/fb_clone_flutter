@@ -1,4 +1,4 @@
-#Thu Jan 30 00:08:17 MYT 2020
-base.0=/media/thiyraash96/D/development/flutter/provider/Flutter own project/fb_clone_flutter/build/app/intermediates/transforms/dexMerger/debug/0
+#Thu Jan 30 16:27:38 SGT 2020
+base.0=C\:\\Github\\Clone_App\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

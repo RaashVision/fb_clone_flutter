@@ -36,34 +36,6 @@ class FbFriendsWidget extends StatelessWidget {
   Size fullSize;
   Orientation orientation;
 
-  List<StaggeredTile> _staggeredTiles = const <StaggeredTile>[
-  const StaggeredTile.count(2, 2),
-  const StaggeredTile.count(2, 1),
-  const StaggeredTile.count(1, 2),
-  const StaggeredTile.count(1, 1),
-  const StaggeredTile.count(2, 2),
-  const StaggeredTile.count(1, 2),
-  const StaggeredTile.count(1, 1),
-  const StaggeredTile.count(3, 1),
-  const StaggeredTile.count(1, 1),
-  const StaggeredTile.count(4, 1),
-];
-
-List<Widget> _tiles = const <Widget>[
-  const _Example01Tile(Colors.green, Icons.widgets),
-  const _Example01Tile(Colors.lightBlue, Icons.wifi),
-  const _Example01Tile(Colors.amber, Icons.panorama_wide_angle),
-  const _Example01Tile(Colors.brown, Icons.map),
-  const _Example01Tile(Colors.deepOrange, Icons.send),
-  const _Example01Tile(Colors.indigo, Icons.airline_seat_flat),
-  const _Example01Tile(Colors.red, Icons.bluetooth),
-  const _Example01Tile(Colors.pink, Icons.battery_alert),
-  const _Example01Tile(Colors.purple, Icons.desktop_windows),
-  const _Example01Tile(Colors.blue, Icons.radio),
-];
-
-
-
   @override
   Widget build(BuildContext context) {
 

@@ -18,8 +18,8 @@ class Settings{
 
 
  //StagingUrl
- static const APIbaseUrl_staging="https://vmswebapi-staging-as.azurewebsites.net/";
- static const IDENTITYbaseUrl_staging="https://vmsidentityapi-staging-as.azurewebsites.net";
+ static const APIbaseUrl_staging="";
+ static const IDENTITYbaseUrl_staging="";
 
  //AppUnique Identifier
 static const AppUniqueIdentifier = "OptiResident";
@@ -28,7 +28,7 @@ static const AppUniqueIdentifier = "OptiResident";
 //Access Token and Refresh Token key
 static const  access_token = "access_token";
 static const  refresh_token = "refresh_token";
-static const  role ="Resident";
+
 
 //Datetime format follow by whole app
 static const datetime_format = "dd-MM-yyyy";
