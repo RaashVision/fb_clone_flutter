@@ -33,7 +33,7 @@ dependencies:
   intl: ^0.16.0
   transparent_image: ^1.0.0
   font_awesome_flutter: ^8.5.0
- 
+  assorted_layout_widgets: ^1.0.14
   
 dev_dependencies:
   flutter_test:

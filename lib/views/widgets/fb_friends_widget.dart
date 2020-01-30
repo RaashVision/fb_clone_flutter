@@ -3,7 +3,7 @@ import 'package:fb_clone_app/views/core/base_view.dart';
 import 'package:fb_clone_app/views/widgets/fb_col_imagetitle_widget.dart';
 import 'package:fb_clone_app/views/widgets/fb_gridview_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
 
 class _Example01Tile extends StatelessWidget {
   const _Example01Tile(this.backgroundColor, this.iconData);

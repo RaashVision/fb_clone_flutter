@@ -1,6 +1,5 @@
 import 'package:fb_clone_app/views/widgets/fb_friends_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:fb_clone_app/models/imagetile_model.dart';
 import 'package:fb_clone_app/viewmodels/fb_profile_viewmodel.dart';

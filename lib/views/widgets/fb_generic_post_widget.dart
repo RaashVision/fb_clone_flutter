@@ -92,55 +92,6 @@ String facebook;
 
   }
 
-  // Widget OverallReactionWidget(){
-
-  //   return Container(
-  //     height: 50,
-  //     child: ListTile(
-  //       contentPadding: EdgeInsets.fromLTRB(8,0,0,0),
-  //       title: Row(
-  //         mainAxisSize: MainAxisSize.max,
-  //         children: <Widget>[
-
-  //           Stack(
-  //             children: <Widget>[
-
-
-
-  //               //    Padding(
-  //               //    padding: const EdgeInsets.fromLTRB(66,0,0,0),
-  //               //    child: FbCircleImageButton(radius: widget.radius,imgpath: "profile.jpeg",elav: 0.0,thicknessofborder: 3,),
-  //               //  ),
-  //               Padding(
-  //                  padding: const EdgeInsets.fromLTRB(40,0,0,0),
-  //                  child: FbCircleImageButton(radius: widget.radius,imgpath: "wow.png",elav: 0.0,thicknessofborder: 3,),
-  //                ),
-
-  //                Padding(
-  //                  padding: const EdgeInsets.fromLTRB(20,0,0,0),
-  //                  child: FbCircleImageButton(radius: widget.radius,imgpath: "love.png",elav: 0.0,thicknessofborder: 3,),
-  //                ),
-
-              
-  //                Padding(
-  //                   padding: const EdgeInsets.fromLTRB(0,0,0,0),
-  //                   child:likebtn? FbCircleImageButton(radius: widget.radius,imgpath: "like.png",elav: 0.0,thicknessofborder: 3,): Container(),
-  //                 ),
-                
-
-  //             ],
-  //           ),
-           
-  //          Expanded(child: Text("You, Hemalatha Letchumanan and 1 other", style: TextStyle(fontSize: 13),))
-
-
-  //         ],
-  //       ),
-       
-  //     ),
-  //   );
-  // }
-
  Widget BottomView(/*double width ,double height*/){
 
   return Container(
@@ -170,43 +121,6 @@ String facebook;
                           mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         //Icon(FontAwesomeIcons.link,color: Colors.grey,),
-
-
-            //   Expanded(
-            //    child: ReactiveButton(
-            //   child: Container(
-            //     decoration: BoxDecoration(
-            //       border: Border.all(
-            //         color: Colors.black,
-            //         width: 1.0,
-            //       ),
-            //       color: Colors.white,
-            //     ),
-            //     width: 80.0,
-            //     height: 40.0,
-            //     child: Center(
-            //       child: facebook == null
-            //           ? Text('click')
-            //           : Image.asset(
-            //                 'images/$facebook.png',
-            //                 width: 32.0,
-            //                 height: 32.0,
-            //             ),
-            //     ),
-            //   ),
-            //   icons: _facebook, //_flags,
-            //   onTap: () {
-            //     print('TAP');
-            //   },
-            //   onSelected: (ReactiveIconDefinition button) {
-            //     setState(() {
-            //       facebook = button.code;
-            //     });
-            //   },
-            //   iconWidth: 32.0,
-            // ),
-            //              ),
-
 
 
                         likeBtn(),
