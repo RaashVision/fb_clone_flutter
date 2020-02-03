@@ -14,25 +14,13 @@ import 'package:fb_clone_app/settings.dart';
 import 'package:fb_clone_app/views/pages/fb_profile_view.dart';
 import 'package:fb_clone_app/views/shared/app_colors.dart';
 import 'locator.dart';
-import 'views/pages/navigation_drawer.dart';
+
 
 void main() async {
 
 
   //Dependecy injectiion
   setupLocator();
-  
-   
-//     var explicitReportModesMap = {"Exception": CustomDialogReportMode()};
-//     var explicitHandlerMap = {"Exception": CustomDialogReportMode()};
- 
-// CatcherOptions debugOptions =
-//       CatcherOptions(NotificationReportMode(), [CustomHttpHandler(HttpRequestType.post,Settings.CurrentVmsWebAPI)],explicitExceptionReportModesMap:explicitReportModesMap);
-//   CatcherOptions releaseOptions = CatcherOptions(DialogReportMode(), [
-//     EmailManualHandler(["thiyraash.david@optivolve.com"])
-//   ]);
-
-//   CustomCatcher(MyApp(), debugConfig: debugOptions, releaseConfig: releaseOptions);
 
   runApp(MyApp());
 
@@ -47,9 +35,7 @@ class MyApp extends StatelessWidget {
 
    return LifeCycleManager(
       child: MaterialApp(
-        
-        navigatorKey: CustomCatcher.navigatorKey,
-        title: 'Slack Clone',
+        title: 'Fb Clone',
         theme: ThemeData(
         // This is the theme of your application.
         //
